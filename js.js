@@ -13,7 +13,7 @@ $(document).ready(function () {
             $.ajax({
                 url: 'https://bc580197.ngrok.io/api/login',
                 type: 'POST',
-                data: 'dataString',
+                data: dataString,
                 success: function () {
                     alert('Submitted sucessfully');
                 },
