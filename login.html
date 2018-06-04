@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Login</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		
-	</head>
 
-	<body>
-		<div align="center" style="width:500px height:500px">
-			<form action="Details.html">
-				<fieldset >
-					<legend>ADMIN LOGIN</legend>
-						Username: <input id="uname" type="text"><br>
-						Password: <input id="pass" type="text"><br>
-						<input type="submit" value="Login"></input>
-				</fieldset>
-			</form>
-        </div>
-        <script>
-            
-        </script>
-	</body>
+<head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="bg-light container col-md-4" align="center">
+        <form action="login" method="post" autocomplete="on">
+            <fieldset>
+                <legend>ADMIN LOGIN</legend>
+                <div class="form-group">
+
+                    Username:
+                    <input id="username" type="text" class="form-control">
+                </div>
+                <br>
+                <div class="form-group">
+                    Password:
+                    <input id="password" type="text" class="form-control">
+                    <br>
+                </div>
+                <input id="btn" type="submit" value="Login"  class="btn btn-primary">
+            </fieldset>
+        </form>
+    </div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+
 </html>
-
