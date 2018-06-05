@@ -1,25 +1,28 @@
 
 $(document).ready(function () {
-    $('#btn').click(function (e) {
-      var dataString ={
-         username : $("#username").val(),
-         password : $("#password").val(),
-      }
-       
+    $('#form').submit(function (e) {
+        var dataString = {
+            username: $("#username").val(),
+            password: $("#password").val(),
+        }
+
         if (username == '' || password == '') {
             alert("Please Fill All Fields");
         } else {
 
             $.ajax({
-                url: 'https://bc580197.ngrok.io/api/login',
+                url: 'http://c0803ecb.ngrok.io/api/login',
                 type: 'POST',
                 data: dataString,
-                success: function () {
-                    alert('Submitted sucessfully');
+                success: function (data, status, xhr) {
+                    alert(data.msg);
                 },
 
-                error: function () {
-                    alert('Incorrect Username or Password');
+                error: function (data, status, xhr) {
+                     var msg = '';
+                     msg += "Error code :" + data.status + "\n " + data.responseJSON.msg;
+                  alert(msg);
+                  
                 },
             });
         }

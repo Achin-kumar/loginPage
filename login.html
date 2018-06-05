@@ -6,33 +6,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="css.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 </head>
 
 <body>
-    <div class="bg-light container col-md-4" align="center">
-        <form action="login" method="post" autocomplete="on">
+    <div id="myDIV" class="right"  align="center">
+        
+        <form id="form" action="login" method="post" autocomplete="on">
             <fieldset>
-                <legend>ADMIN LOGIN</legend>
+                ADMIN LOGIN
                 <div class="form-group">
 
-                    Username:
-                    <input id="username" type="text" class="form-control">
+                    Username: <input id="username" type="text" class="form-control">
                 </div>
                 <br>
                 <div class="form-group">
-                    Password:
-                    <input id="password" type="text" class="form-control">
+                    Password:<input id="password" type="password" class="form-control">
                     <br>
                 </div>
-                <input id="btn" type="submit" value="Login"  class="btn btn-primary">
+                <input id="btn" type="submit" value="Login"  class="btn btn-light">
             </fieldset>
         </form>
+    </div>
     </div>
     <script type="text/javascript" src="js.js"></script>
 </body>
 
 </html>
+
